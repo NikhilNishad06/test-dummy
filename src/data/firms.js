@@ -1,0 +1,40 @@
+export const dummyFirms = [
+  {
+    id: "f_1",
+    firmName: "Alpha Logistics Solutions",
+    shortName: "ALS",
+    gstNumber: "22AAAAA0000A1Z5",
+    panNumber: "AAAAA0000A",
+    cinNumber: "U12345MH2020PTC123456",
+    address: "123 Business Road",
+    city: "Mumbai",
+    state: "Maharashtra",
+    pincode: "400001",
+    contactPerson: "Rajesh Kumar",
+    mobile: "9876543210",
+    email: "rajesh@alphalogistics.in",
+    bankName: "HDFC Bank",
+    accountNumber: "50100123456789",
+    ifscCode: "HDFC0001234",
+    status: "Active"
+  },
+  {
+    id: "f_2",
+    firmName: "Beta Coal Handlers Pvt Ltd",
+    shortName: "BCH",
+    gstNumber: "27BBBBB0000B1Z5",
+    panNumber: "BBBBB0000B",
+    cinNumber: "U12345WB2018PTC123456",
+    address: "45 Industrial Estate",
+    city: "Kolkata",
+    state: "West Bengal",
+    pincode: "700001",
+    contactPerson: "Amit Singh",
+    mobile: "9123456789",
+    email: "amit@betacoal.in",
+    bankName: "ICICI Bank",
+    accountNumber: "000105001234",
+    ifscCode: "ICIC0000001",
+    status: "Active"
+  }
+];
