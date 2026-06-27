@@ -43,18 +43,18 @@ export default function CommissionList() {
     {
       accessorKey: "amount",
       header: "Total Comm",
-      cell: ({ row }) => `₹${row.getValue("amount").toLocaleString()}`
+      cell: ({ row }) => `₹${(row.getValue("amount") || 0).toLocaleString()}`
     },
     {
       accessorKey: "paidAmount",
       header: "Paid",
-      cell: ({ row }) => <span className="text-emerald-600 font-bold">₹{row.getValue("paidAmount").toLocaleString()}</span>
+      cell: ({ row }) => <span className="text-emerald-600 font-bold">₹{(row.getValue("paidAmount") || 0).toLocaleString()}</span>
     },
     {
       accessorKey: "balance",
       header: "Balance",
       cell: ({ row }) => {
-        const bal = row.getValue("balance");
+        const bal = row.getValue("balance") || 0;
         return <span className={bal > 0 ? "text-purple-600 font-medium" : "text-muted-foreground"}>₹{bal.toLocaleString()}</span>
       }
     },
