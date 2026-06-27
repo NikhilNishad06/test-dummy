@@ -87,7 +87,7 @@ export default function ReportsHub() {
         </CardHeader>
         <CardContent className="flex-1 overflow-auto p-6 space-y-8 bg-slate-50/50">
            
-           <div className="grid grid-cols-4 gap-4">
+           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
              <div className="bg-white p-4 rounded border text-center shadow-sm">
                 <div className="text-xs text-muted-foreground mb-1">Total Records</div>
                 <div className="text-xl font-bold">1,245</div>

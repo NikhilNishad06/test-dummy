@@ -39,7 +39,7 @@ export default function GlobalSettings() {
               <CardDescription>Primary operating entity details used in headers and invoices.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Company Name</Label>
                   <Input defaultValue="Coal ERP Enterprises Ltd." />
@@ -72,22 +72,22 @@ export default function GlobalSettings() {
               <CardDescription>Configure prefixes and starting numbers for auto-generated IDs.</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
-              <div className="grid grid-cols-3 gap-4 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                 <Label className="font-medium">Deal ID</Label>
                 <Input defaultValue="DL" placeholder="Prefix" />
                 <Input defaultValue="2026-0001" placeholder="Next Number" />
               </div>
-              <div className="grid grid-cols-3 gap-4 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                 <Label className="font-medium">Delivery Order (DO)</Label>
                 <Input defaultValue="DO" placeholder="Prefix" />
                 <Input defaultValue="26-27-0150" placeholder="Next Number" />
               </div>
-              <div className="grid grid-cols-3 gap-4 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                 <Label className="font-medium">Sales Invoice</Label>
                 <Input defaultValue="INV" placeholder="Prefix" />
                 <Input defaultValue="2026-450" placeholder="Next Number" />
               </div>
-              <div className="grid grid-cols-3 gap-4 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                 <Label className="font-medium">Vendor Payment</Label>
                 <Input defaultValue="VP" placeholder="Prefix" />
                 <Input defaultValue="2026-001" placeholder="Next Number" />
@@ -102,7 +102,7 @@ export default function GlobalSettings() {
               <CardTitle>Financial & Tax Defaults</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Default GST Rate (%)</Label>
                   <Input type="number" defaultValue={5} />

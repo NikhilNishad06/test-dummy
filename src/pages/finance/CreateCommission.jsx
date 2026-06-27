@@ -33,7 +33,7 @@ export default function CreateCommission() {
           <CardTitle>Commission Details</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
             <div className="space-y-2">
               <Label>Link Deal ID</Label>
               <Input placeholder="Select Deal ID" />
@@ -44,7 +44,7 @@ export default function CreateCommission() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded">
             <div className="space-y-2">
               <Label>Commission Basis</Label>
               <Select value={basis} onValueChange={setBasis}>
@@ -77,7 +77,7 @@ export default function CreateCommission() {
             )}
           </div>
 
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-purple-50/30">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-purple-50/30">
             <div className="space-y-2">
               <Label>Payment Date</Label>
               <Input type="date" />

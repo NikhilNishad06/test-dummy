@@ -39,7 +39,7 @@ export default function DoDetails() {
             <CardHeader>
               <CardTitle>Basic Information</CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Firm</span>
                 <p className="font-medium">{dOrder.firm}</p>
@@ -68,7 +68,7 @@ export default function DoDetails() {
               <CardTitle>Quantity Balance</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
-               <div className="grid grid-cols-3 gap-4 text-center">
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                  <div className="p-4 bg-muted/20 rounded border">
                    <div className="text-sm text-muted-foreground mb-1">Total Quantity</div>
                    <div className="text-2xl font-bold">{dOrder.totalQuantity} MT</div>

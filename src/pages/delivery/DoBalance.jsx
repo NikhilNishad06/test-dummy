@@ -39,7 +39,7 @@ export default function DoBalance() {
                   <span className="text-lg">{progress.toFixed(1)}% Completed</span>
                 </div>
                 <Progress value={progress} className="h-4" />
-                <div className="grid grid-cols-3 gap-4 pt-4 text-center">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 text-center">
                   <div>
                     <div className="text-sm text-muted-foreground">Total Allowed</div>
                     <div className="text-2xl font-bold">{totalQty.toLocaleString()} MT</div>

@@ -121,7 +121,7 @@ export default function DealDetails() {
             <CardHeader>
               <CardTitle className="text-lg">Assigned Teams</CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-center">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-4 gap-4 text-sm text-center">
               <div className="bg-muted/50 p-4 rounded border">
                 <p className="text-muted-foreground mb-1">Deal Owner</p>
                 <p className="font-medium">{deal.dealOwner}</p>

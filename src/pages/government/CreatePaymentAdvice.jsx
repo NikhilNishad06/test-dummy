@@ -33,7 +33,7 @@ export default function CreatePaymentAdvice() {
             <CardTitle>Advice Details</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Link to Deal ID</Label>
                 <Input placeholder="Select Deal" />
@@ -52,7 +52,7 @@ export default function CreatePaymentAdvice() {
               </div>
             </div>
 
-            <div className="border-t pt-4 grid grid-cols-2 gap-4">
+            <div className="border-t pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Gross Amount (₹)</Label>
                 <Input type="number" value={gross} onChange={e => setGross(Number(e.target.value))} />
@@ -71,7 +71,7 @@ export default function CreatePaymentAdvice() {
               </div>
             </div>
             
-            <div className="border-t pt-4 grid grid-cols-2 gap-4">
+            <div className="border-t pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Advice Date</Label>
                 <Input type="date" />

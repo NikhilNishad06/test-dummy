@@ -33,7 +33,7 @@ export default function CreateTransportSettlement() {
           <CardTitle>Freight Payment Details</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
             <div className="space-y-2">
               <Label>Link Dispatch Ref</Label>
               <Input placeholder="Select Dispatch ID" />
@@ -52,7 +52,7 @@ export default function CreateTransportSettlement() {
             </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-6 p-4 border rounded">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 border rounded">
             <div className="space-y-2">
               <Label>Freight Rate (₹/MT)</Label>
               <Input type="number" value={freightRate} onChange={e => setFreightRate(Number(e.target.value))} />
@@ -67,7 +67,7 @@ export default function CreateTransportSettlement() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-amber-50/30">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-amber-50/30">
             <div className="space-y-2">
               <Label className="text-amber-700">Advance Paid (₹)</Label>
               <Input type="number" value={advancePaid} onChange={e => setAdvancePaid(Number(e.target.value))} className="border-amber-200 focus-visible:ring-amber-500" />

@@ -32,7 +32,7 @@ export default function VendorPaymentDetails() {
               <CardTitle>Linkage Context</CardTitle>
               <Badge variant={payment.status === 'Paid' ? 'default' : payment.status === 'Pending' ? 'destructive' : 'outline'}>{payment.status}</Badge>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Deal Reference</span>
                 <p className="font-bold text-lg text-sky-600 hover:underline cursor-pointer" onClick={() => navigate(`/deals/${payment.dealId}/360`)}>{payment.dealId}</p>

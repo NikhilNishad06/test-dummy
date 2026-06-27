@@ -40,7 +40,7 @@ export default function CreateAllocation() {
             <CardTitle>Allocation Details</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Customer Order Ref</Label>
                 <Input defaultValue={orderId} placeholder="Select Customer Order" />
@@ -59,7 +59,7 @@ export default function CreateAllocation() {
               </div>
             </div>
 
-            <div className="border-t pt-4 grid grid-cols-2 gap-4">
+            <div className="border-t pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Total Ordered Quantity (MT)</Label>
                 <Input type="number" value={orderedQty} disabled />

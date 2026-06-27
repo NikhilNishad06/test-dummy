@@ -37,7 +37,7 @@ export default function DispatchDetails() {
             <CardHeader>
               <CardTitle>Logistics Information</CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Truck Number</span>
                 <p className="font-bold text-lg">{dispatch.truckNumber}</p>
@@ -59,7 +59,7 @@ export default function DispatchDetails() {
             </CardContent>
           </Card>
           
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card>
               <CardHeader className="pb-2">
                 <CardTitle className="text-base flex items-center gap-2"><MapPin className="h-4 w-4"/> Route</CardTitle>

@@ -37,7 +37,7 @@ export default function SaleLetterDetails() {
             <CardHeader>
               <CardTitle>Basic Information</CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Firm</span>
                 <p className="font-medium">{sl.firm}</p>
@@ -57,7 +57,7 @@ export default function SaleLetterDetails() {
             </CardContent>
           </Card>
           
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card>
               <CardHeader className="pb-2">
                 <CardTitle className="text-base">Quantity</CardTitle>

@@ -36,7 +36,7 @@ export default function SalesDispatchDetails() {
               <CardTitle>Commercial Context</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-sm">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <span className="text-muted-foreground">Customer</span>
                   <p className="font-bold text-lg">{dispatch.customer}</p>
@@ -46,7 +46,7 @@ export default function SalesDispatchDetails() {
                   <p className="font-bold text-lg text-emerald-600">{dispatch.quantity} MT</p>
                 </div>
               </div>
-              <div className="pt-4 border-t grid grid-cols-2 gap-4">
+              <div className="pt-4 border-t grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <span className="text-muted-foreground">DO Reference</span>
                   <p className="font-medium text-sky-600 hover:underline cursor-pointer" onClick={() => navigate(`/delivery/orders/${dispatch.doNumber}`)}>{dispatch.doNumber}</p>
@@ -64,7 +64,7 @@ export default function SalesDispatchDetails() {
               <CardTitle>Logistics Linkage</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-sm">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <span className="text-muted-foreground">Truck Dispatch Ref</span>
                   <p className="font-medium text-sky-600 hover:underline cursor-pointer" onClick={() => navigate(`/dispatch/trucks/${dispatch.truckDispatchId}`)}>{dispatch.truckDispatchId}</p>
@@ -74,7 +74,7 @@ export default function SalesDispatchDetails() {
                   <p className="font-bold">{dispatch.truckNumber}</p>
                 </div>
               </div>
-              <div className="pt-4 border-t grid grid-cols-2 gap-4">
+              <div className="pt-4 border-t grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <span className="text-muted-foreground">Dispatch Date</span>
                   <p className="font-medium">{new Date(dispatch.dispatchDate).toLocaleDateString()}</p>

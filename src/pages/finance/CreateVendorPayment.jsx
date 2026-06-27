@@ -33,7 +33,7 @@ export default function CreateVendorPayment() {
           <CardTitle>Payment Details</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
             <div className="space-y-2">
               <Label>Link Deal ID</Label>
               <Input placeholder="Select Deal ID" />
@@ -52,7 +52,7 @@ export default function CreateVendorPayment() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded">
             <div className="space-y-2">
               <Label>Payment Date</Label>
               <Input type="date" />
@@ -63,7 +63,7 @@ export default function CreateVendorPayment() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-rose-50/30">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-rose-50/30">
             <div className="space-y-2">
               <Label className="text-rose-700">Delayed Days (Interest Calc)</Label>
               <Input type="number" value={interestDays} onChange={e => setInterestDays(Number(e.target.value))} className="border-rose-200 focus-visible:ring-rose-500" />

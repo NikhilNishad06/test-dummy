@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Moon, Sun, Building, Shield, LogOut } from "lucide-react";
+import { Moon, Sun, Building, Shield, LogOut, Menu } from "lucide-react";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -22,7 +22,7 @@ import {
 } from "@/components/ui/breadcrumb";
 import { useLocation } from 'react-router-dom';
 
-export default function TopNav() {
+export default function TopNav({ onMenuClick }) {
   const { user, logout, companies, currentCompany, setCurrentCompany, roles, currentRole, setCurrentRole } = useAuth();
   const { theme, setTheme } = useTheme();
   const location = useLocation();
@@ -30,9 +30,12 @@ export default function TopNav() {
   const pathnames = location.pathname.split('/').filter((x) => x);
 
   return (
-    <header className="flex h-14 items-center gap-4 border-b bg-muted/10 px-6">
-      <div className="flex flex-1 items-center gap-4">
-        <Breadcrumb className="hidden sm:flex">
+    <header className="flex h-14 items-center gap-2 sm:gap-4 border-b bg-muted/10 px-4 sm:px-6 shrink-0">
+      <div className="flex flex-1 items-center gap-2 sm:gap-4">
+        <Button variant="ghost" size="icon" className="md:hidden" onClick={onMenuClick}>
+          <Menu className="h-5 w-5" />
+        </Button>
+        <Breadcrumb className="hidden md:flex">
           <BreadcrumbList>
             <BreadcrumbItem>
               <BreadcrumbLink href="/">Home</BreadcrumbLink>

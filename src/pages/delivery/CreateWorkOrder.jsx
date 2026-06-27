@@ -54,7 +54,7 @@ export default function CreateWorkOrder() {
         </CardHeader>
         <CardContent className="space-y-4">
           {step === 1 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Link to Deal ID</Label>
                 <Input placeholder="Select Deal" />
@@ -83,7 +83,7 @@ export default function CreateWorkOrder() {
           )}
 
           {step === 2 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2 col-span-2 p-4 bg-muted/20 border rounded">
                  <p className="text-sm font-medium">DO Pending Quantity Balance: <span className="text-sky-600 font-bold">4,000 MT</span></p>
                  <p className="text-xs text-muted-foreground mt-1">Work order quantity cannot exceed the remaining DO balance.</p>
@@ -104,7 +104,7 @@ export default function CreateWorkOrder() {
           )}
 
           {step === 3 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Start Date</Label>
                 <Input type="date" />
@@ -129,7 +129,7 @@ export default function CreateWorkOrder() {
               <p className="text-muted-foreground text-sm">Review the work order parameters.</p>
               <div className="rounded border p-4 bg-muted/20">
                 <h4 className="font-semibold mb-4">Work Order Summary</h4>
-                <div className="grid grid-cols-2 gap-4 text-sm">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   <div>Assignment Ref: <span className="font-medium text-foreground">{assignmentId || 'LA-2026-0001'}</span></div>
                   <div>Quantity: <span className="font-medium text-foreground">{qty || '0'} MT</span></div>
                   <div>Lifter: <span className="font-medium text-foreground">Selected Lifter</span></div>

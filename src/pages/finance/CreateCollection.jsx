@@ -35,7 +35,7 @@ export default function CreateCollection() {
           <CardTitle>Collection Details</CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
             <div className="space-y-2">
               <Label>Invoice Number</Label>
               <Input defaultValue={invoiceId} placeholder="Select Invoice" />
@@ -54,7 +54,7 @@ export default function CreateCollection() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded">
             <div className="space-y-2">
               <Label>Payment Date</Label>
               <Input type="date" />
@@ -69,7 +69,7 @@ export default function CreateCollection() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-sky-50/30">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-sky-50/30">
             <div className="space-y-2">
               <Label className="text-sky-700">Received Amount (₹)</Label>
               <Input type="number" value={receivedAmount} onChange={e => setReceivedAmount(Number(e.target.value))} className="border-sky-200 focus-visible:ring-sky-500 font-bold" />

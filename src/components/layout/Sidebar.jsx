@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '../../contexts/AuthContext';
 
-export default function Sidebar({ collapsed, setCollapsed }) {
+export default function Sidebar({ collapsed, setCollapsed, isMobile = false }) {
   const [mastersOpen, setMastersOpen] = useState(false);
   const [dealsOpen, setDealsOpen] = useState(false);
   const [auctionsOpen, setAuctionsOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function Sidebar({ collapsed, setCollapsed }) {
   const [dispatchOpen, setDispatchOpen] = useState(false);
   const [salesOpen, setSalesOpen] = useState(false);
   const [financeOpen, setFinanceOpen] = useState(false);
-  const [adminOpen, setAdminOpen] = useState(true);
+  const [adminOpen, setAdminOpen] = useState(false);
   const location = useLocation();
   const { user, currentRole, logout } = useAuth();
 
@@ -113,13 +113,18 @@ export default function Sidebar({ collapsed, setCollapsed }) {
 
   return (
     <div className={cn(
-      "flex flex-col border-r bg-muted/10 transition-all duration-300",
+      "flex flex-col border-r bg-muted/10 transition-all duration-300 h-full",
       collapsed ? "w-[80px]" : "w-[250px]"
     )}>
       <div className="flex h-14 items-center justify-between px-4 border-b">
         {!collapsed && <span className="font-semibold tracking-tight truncate">Coal ERP</span>}
-        <Button variant="ghost" size="icon" onClick={() => setCollapsed(!collapsed)} className={cn(collapsed && "mx-auto")}>
-          {collapsed ? <PanelLeftOpen className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />}
+        <Button 
+          variant="ghost" 
+          size="icon" 
+          onClick={() => isMobile ? setCollapsed(false) : setCollapsed(!collapsed)} 
+          className={cn(collapsed && "mx-auto")}
+        >
+          {isMobile ? <PanelLeftClose className="h-4 w-4" /> : (collapsed ? <PanelLeftOpen className="h-4 w-4" /> : <PanelLeftClose className="h-4 w-4" />)}
         </Button>
       </div>
       <div className="flex-1 overflow-auto py-2">

@@ -89,7 +89,7 @@ export default function Deal360View() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                 {modules.map(mod => (
                   <Card key={mod.title} className="hover:border-primary/50 cursor-pointer transition-colors shadow-sm group">
                     <CardContent className="p-4 flex flex-col items-center justify-center text-center h-28">

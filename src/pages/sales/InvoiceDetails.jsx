@@ -38,7 +38,7 @@ export default function InvoiceDetails() {
               <CardTitle>Customer & Context</CardTitle>
               <Badge variant={invoice.status === 'Paid' ? 'default' : 'outline'}>{invoice.status}</Badge>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Billed To</span>
                 <p className="font-bold text-lg">{invoice.customer}</p>

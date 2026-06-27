@@ -32,7 +32,7 @@ export default function CommissionDetails() {
               <CardTitle>Deal Linkage</CardTitle>
               <Badge variant={commission.status === 'Paid' ? 'default' : commission.status === 'Pending' ? 'destructive' : 'outline'}>{commission.status}</Badge>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Deal Reference</span>
                 <p className="font-medium text-sky-600 hover:underline cursor-pointer" onClick={() => navigate(`/deals/${commission.dealId}/360`)}>{commission.dealId}</p>

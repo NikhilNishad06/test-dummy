@@ -48,7 +48,7 @@ export default function VehicleTracking() {
                       <div className="flex items-center gap-2 text-muted-foreground">
                         <Truck className="h-4 w-4" /> {card.transporter}
                       </div>
-                      <div className="grid grid-cols-2 gap-1 text-xs pt-2 border-t">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-1 text-xs pt-2 border-t">
                         <div>
                           <span className="text-muted-foreground block">Mine</span>
                           <span className="font-medium">{card.mine}</span>

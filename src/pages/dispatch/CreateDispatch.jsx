@@ -34,7 +34,7 @@ export default function CreateDispatch() {
             {/* Context Section */}
             <div className="space-y-4 p-4 border rounded bg-muted/10">
               <h3 className="font-semibold border-b pb-2">Linkage Details</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Link to Work Order</Label>
                   <Input placeholder="Select WO" />
@@ -57,7 +57,7 @@ export default function CreateDispatch() {
             {/* Truck Section */}
             <div className="space-y-4 p-4 border rounded bg-muted/10">
               <h3 className="font-semibold border-b pb-2">Truck Information</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Truck Number</Label>
                   <Input placeholder="e.g. CG-04-MT-1234" />
@@ -80,7 +80,7 @@ export default function CreateDispatch() {
             {/* Loading Section */}
             <div className="space-y-4 p-4 border rounded bg-muted/10">
               <h3 className="font-semibold border-b pb-2">Loading & Destination</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Loading Date</Label>
                   <Input type="date" />
@@ -103,7 +103,7 @@ export default function CreateDispatch() {
             {/* Freight Section */}
             <div className="space-y-4 p-4 border rounded bg-muted/10">
               <h3 className="font-semibold border-b pb-2">Freight & Quantity</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Assumed Quantity (MT)</Label>
                   <Input type="number" value={qty} onChange={e => setQty(Number(e.target.value))} />

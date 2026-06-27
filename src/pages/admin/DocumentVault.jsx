@@ -92,7 +92,7 @@ export default function DocumentVault() {
                  <p>No documents found.</p>
                </div>
             ) : view === 'grid' ? (
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
                 {filteredDocs.map(doc => (
                   <div key={doc.id} className="group relative bg-white border rounded-lg p-4 hover:border-sky-300 hover:shadow-md transition-all flex flex-col items-center text-center cursor-pointer">
                     <FileText className={`h-12 w-12 mb-3 ${doc.name.endsWith('.pdf') ? 'text-red-500' : 'text-emerald-500'}`} />

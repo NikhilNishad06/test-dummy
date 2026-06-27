@@ -34,7 +34,7 @@ export default function AllocationDetails() {
             <CardHeader>
               <CardTitle>Linkage Information</CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Customer</span>
                 <p className="font-bold text-lg">{allocation.customer}</p>
@@ -66,7 +66,7 @@ export default function AllocationDetails() {
                    </div>
                    <Progress value={dispProgress} className="h-4 bg-sky-100" indicatorClassName="bg-sky-500" />
                    
-                   <div className="grid grid-cols-3 gap-4 pt-6 text-center">
+                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 text-center">
                      <div>
                        <div className="text-xs text-muted-foreground">Total Customer Order</div>
                        <div className="text-xl font-bold">{allocation.orderedQuantity} MT</div>

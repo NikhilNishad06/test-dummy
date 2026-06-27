@@ -33,7 +33,7 @@ export default function CollectionDetails() {
               <CardTitle>Customer Summary</CardTitle>
               <Badge variant={collection.status === 'Received' ? 'default' : collection.status === 'Overdue' ? 'destructive' : 'outline'}>{collection.status}</Badge>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Customer Name</span>
                 <p className="font-bold text-lg">{collection.customer}</p>
@@ -73,7 +73,7 @@ export default function CollectionDetails() {
             <CardHeader>
               <CardTitle>Payment Information</CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Payment Date</span>
                 <p className="font-medium">{collection.paymentDate ? new Date(collection.paymentDate).toLocaleDateString() : 'N/A'}</p>

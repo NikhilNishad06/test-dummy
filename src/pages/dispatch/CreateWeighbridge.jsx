@@ -35,7 +35,7 @@ export default function CreateWeighbridge() {
             <CardTitle>Slip Entry</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Dispatch Reference</Label>
                 <Input defaultValue={dispatchId} placeholder="Select Dispatch ID" />
@@ -54,7 +54,7 @@ export default function CreateWeighbridge() {
               </div>
             </div>
 
-            <div className="border-t pt-4 grid grid-cols-2 gap-4">
+            <div className="border-t pt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Mine Weight (MT)</Label>
                 <Input type="number" step="0.01" value={mineWt} onChange={e => setMineWt(Number(e.target.value))} />

@@ -43,7 +43,7 @@ export default function CreateDeal() {
         </CardHeader>
         <CardContent className="space-y-4">
           {step === 1 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Deal ID (Auto Generated)</Label>
                 <Input disabled value="DL-2026-0021" />
@@ -80,7 +80,7 @@ export default function CreateDeal() {
           )}
 
           {step === 2 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Total Quantity (MT)</Label>
                 <Input type="number" placeholder="0" />
@@ -93,7 +93,7 @@ export default function CreateDeal() {
           )}
 
           {step === 3 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Base Purchase Rate (₹)</Label>
                 <Input type="number" placeholder="0.00" />
@@ -122,7 +122,7 @@ export default function CreateDeal() {
           )}
 
           {step === 4 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Deal Owner</Label>
                 <Input placeholder="Select User" />
@@ -151,7 +151,7 @@ export default function CreateDeal() {
               <p className="text-muted-foreground text-sm">Review the entered information before generating the deal record.</p>
               <div className="rounded border p-4 bg-muted/20">
                 <h4 className="font-semibold mb-2">Summary</h4>
-                <div className="grid grid-cols-2 gap-2 text-sm">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
                   <div>Deal Title: <span className="font-medium text-foreground">Draft Deal</span></div>
                   <div>Quantity: <span className="font-medium text-foreground">5000 MT</span></div>
                   <div>Mine: <span className="font-medium text-foreground">WCL Mine 1</span></div>

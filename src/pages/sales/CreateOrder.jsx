@@ -29,7 +29,7 @@ export default function CreateOrder() {
             
             <div className="space-y-4 p-4 border rounded bg-muted/10">
               <h3 className="font-semibold border-b pb-2">Deal Context</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Link Deal ID</Label>
                   <Input placeholder="Select Deal" />
@@ -47,7 +47,7 @@ export default function CreateOrder() {
 
             <div className="space-y-4 p-4 border rounded bg-muted/10">
               <h3 className="font-semibold border-b pb-2">Order Specifics</h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label>Order Number</Label>
                   <Input placeholder="e.g. SO-2026-0001" />
@@ -69,7 +69,7 @@ export default function CreateOrder() {
 
             <div className="space-y-4 p-4 border rounded bg-muted/10 md:col-span-2">
               <h3 className="font-semibold border-b pb-2">Material & Logistics</h3>
-              <div className="grid grid-cols-4 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="space-y-2">
                   <Label>Coal Grade</Label>
                   <Input placeholder="Auto-populated" disabled />

@@ -51,7 +51,7 @@ export default function CreateInvoice() {
         <CardContent className="space-y-6">
           
           {step === 1 && (
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <Label>Link Sales Dispatch Ref</Label>
                 <Input defaultValue={dispatchId} placeholder="Select Dispatch ID" />
@@ -81,7 +81,7 @@ export default function CreateInvoice() {
 
           {step === 2 && (
             <div className="space-y-6">
-              <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
                 <div className="space-y-2">
                   <Label>Invoiced Quantity (MT)</Label>
                   <Input type="number" value={qty} onChange={e => setQty(Number(e.target.value))} />
@@ -91,7 +91,7 @@ export default function CreateInvoice() {
                   <Input type="number" value={rate} onChange={e => setRate(Number(e.target.value))} />
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded bg-muted/10">
                 <div className="space-y-2">
                   <Label>Taxable Amount (₹)</Label>
                   <Input type="number" value={taxable} disabled />
@@ -114,7 +114,7 @@ export default function CreateInvoice() {
                  <h3 className="text-2xl font-bold">₹{total.toLocaleString()}</h3>
                  <p className="text-sm text-muted-foreground">Ready to generate invoice for <strong>{qty} MT</strong>.</p>
                  
-                 <div className="grid grid-cols-2 gap-x-12 gap-y-2 text-sm text-left pt-4 border-t w-full max-w-md">
+                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-2 text-sm text-left pt-4 border-t w-full max-w-md">
                    <div className="text-muted-foreground">Taxable:</div>
                    <div className="font-medium text-right">₹{taxable.toLocaleString()}</div>
                    <div className="text-muted-foreground">GST (5%):</div>

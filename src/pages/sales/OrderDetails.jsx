@@ -46,7 +46,7 @@ export default function OrderDetails() {
             <CardHeader>
               <CardTitle>Commercial Details</CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Customer Name</span>
                 <p className="font-bold text-lg">{order.customerName}</p>
@@ -88,7 +88,7 @@ export default function OrderDetails() {
              </CardContent>
           </Card>
           
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Card>
               <CardHeader className="pb-2">
                 <CardTitle className="text-base">Order Valuation</CardTitle>

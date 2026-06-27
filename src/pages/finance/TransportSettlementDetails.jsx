@@ -32,7 +32,7 @@ export default function TransportSettlementDetails() {
               <CardTitle>Logistics Linkage</CardTitle>
               <Badge variant={settlement.status === 'Paid' ? 'default' : settlement.status === 'Pending' ? 'destructive' : 'outline'}>{settlement.status}</Badge>
             </CardHeader>
-            <CardContent className="grid grid-cols-2 gap-4 text-sm">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
               <div className="space-y-1">
                 <span className="text-muted-foreground">Truck Number</span>
                 <p className="font-bold text-lg">{settlement.truckNumber}</p>

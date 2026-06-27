@@ -74,7 +74,7 @@ export default function LiftingTracker() {
                   <span className="text-lg">{progress.toFixed(1)}% Lifted</span>
                 </div>
                 <Progress value={progress} className="h-4 bg-emerald-100" />
-                <div className="grid grid-cols-3 gap-4 pt-4 text-center">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 text-center">
                   <div>
                     <div className="text-sm text-muted-foreground">Total Allowed (All DOs)</div>
                     <div className="text-2xl font-bold">{totalDO.toLocaleString()} MT</div>

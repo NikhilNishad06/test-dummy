@@ -44,7 +44,7 @@ export default function CreateBid() {
         </CardHeader>
         <CardContent className="space-y-4">
           {step === 1 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Link to Deal ID</Label>
                 <Input placeholder="Select Deal" />
@@ -61,7 +61,7 @@ export default function CreateBid() {
           )}
 
           {step === 2 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label>Quantity (MT)</Label>
                 <Input type="number" defaultValue="5000" />
@@ -91,7 +91,7 @@ export default function CreateBid() {
 
           {step === 3 && (
             <div className="space-y-4">
-               <div className="grid grid-cols-2 gap-4">
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                  <div className="border p-4 rounded bg-red-50/50">
                     <h4 className="font-semibold text-red-800 mb-4">Total Costs</h4>
                     <div className="space-y-2 text-sm">
@@ -127,7 +127,7 @@ export default function CreateBid() {
               <p className="text-muted-foreground text-sm">Review the entered bid parameters.</p>
               <div className="rounded border p-4 bg-muted/20">
                 <h4 className="font-semibold mb-2">Bid Summary</h4>
-                <div className="grid grid-cols-2 gap-2 text-sm">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
                   <div>Auction No: <span className="font-medium text-foreground">{auctionId || 'AUC-2026-0001'}</span></div>
                   <div>Quantity: <span className="font-medium text-foreground">5000 MT</span></div>
                   <div>Bid Rate: <span className="font-medium text-foreground">₹ 5600 / MT</span></div>

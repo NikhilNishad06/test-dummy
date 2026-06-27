@@ -98,7 +98,7 @@ export default function ApplicationList() {
       onRefresh={refresh}
       onExport={() => alert("Exported!")}
     >
-      <div className="grid grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
         <div className="p-4 rounded border bg-muted/20">
           <div className="text-sm text-muted-foreground mb-1">Total Submissions</div>
           <div className="text-2xl font-bold">{dummyApplications.length}</div>
