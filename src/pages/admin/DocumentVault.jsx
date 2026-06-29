@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { dummyDocuments } from '@/data/documents';
-import { FileText, Folder, Search, Download, Upload, Filter, Tag, Grid, List as ListIcon, MoreVertical } from 'lucide-react';
+import { FileText, Folder, Search, Download, Upload, Filter, Tag, Grid, List as ListIcon, MoreVertical, Eye } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import {
   DropdownMenu,
@@ -106,9 +106,15 @@ export default function DocumentVault() {
                           <Button variant="ghost" size="icon" className="h-6 w-6"><MoreVertical className="h-4 w-4"/></Button>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end">
-                          <DropdownMenuItem><Eye className="h-4 w-4 mr-2"/> Preview</DropdownMenuItem>
-                          <DropdownMenuItem><Download className="h-4 w-4 mr-2"/> Download</DropdownMenuItem>
-                          <DropdownMenuItem><Tag className="h-4 w-4 mr-2"/> Edit Tags</DropdownMenuItem>
+                          <DropdownMenuItem onClick={() => alert(`Preview ${doc.id}`)}>
+                            <Eye className="h-4 w-4 mr-2"/> Preview
+                          </DropdownMenuItem>
+                          <DropdownMenuItem onClick={() => alert(`Download ${doc.id}`)}>
+                            <Download className="h-4 w-4 mr-2"/> Download
+                          </DropdownMenuItem>
+                          <DropdownMenuItem onClick={() => alert(`Edit tags for ${doc.id}`)}>
+                            <Tag className="h-4 w-4 mr-2"/> Edit Tags
+                          </DropdownMenuItem>
                         </DropdownMenuContent>
                       </DropdownMenu>
                     </div>

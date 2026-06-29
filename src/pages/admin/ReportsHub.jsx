@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { FileText, Download, Printer, Filter } from 'lucide-react';
 import { ResponsiveContainer, Tooltip as RechartsTooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { Badge } from '@/components/ui/badge';
 
 export default function ReportsHub() {
   const [reportType, setReportType] = useState('profitability');
